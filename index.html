@@ -1,17 +1,13 @@
-
 <!doctype html>
 <html>
   <head>
     <title>Sockio - Socket.IO chat</title>
     <link rel="stylesheet" type="text/css" href="/static/css/sockio.min.css">
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
   $(function () {
     var socket = io();
@@ -26,46 +22,21 @@
   });
 </script>
 
-
   <body>
- <!-- Page Content -->
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
                 <h1>Sockio - Chat </h1>
-                <p class="lead"> A Flexible Socket.io with Bootstrap Chat. Complete with pre-defined file paths that you won't have to change!!<pre>
-  $(function () {
-    var socket = io();
-    $('form').submit(function(){
-      socket.emit('chat message', $('#sender').val());
-      $('#sender').val('');
-      return false;
-    });
-    socket.on('chat message', function(msg){
-      $('#messages').append($('<li>').text(msg));
-    });
-  });
-
- </pre></p>
               <ul id="messages"></ul>
                 <div class="form-group">
-
-    <form action="">
-      <input id="sender"  class="form-control" id="exampleInputEmail1" placeholder="Email" autocomplete="off" /><br>
-      <button  class="btn-1">Send</button>
-    </form>
-
-            </div>
+                    <form action="">
+                      <input id="sender"  class="form-control" id="exampleInputEmail1" placeholder="Email" autocomplete="off" /><br>
+                      <button  class="btn-1">Send</button>
+                    </form>
+               </div>
             </div>
         </div>
-        <!-- /.row -->
-
     </div>
-    <!-- /.container -->
-
-
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
