@@ -1,7 +1,7 @@
 {
   "name": "sockio-socket",
   "version": "0.0.1",
-  "description": "sockio - socket.io app",
+  "description": "sockio - socket.io and node.js express app",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^2.0.3"
